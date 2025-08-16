@@ -1,2 +1,4 @@
 # bookbot
-tutorial 4 from boot.dev
+
+
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
