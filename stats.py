@@ -16,5 +16,18 @@ def character_count(text):
    
     return characters
 
- 
+def sort_on(item):
+    return item["num"]
 
+
+def character_dictionary(dictionary):
+    list_of_dictionaries = []
+    set = {}
+    for c in dictionary:
+        letter = dictionary[c]
+        set = {"char": c, "num":letter}
+        #print(f"{set}")
+        list_of_dictionaries.append(set) 
+    #print(list_of_dictionaries)
+    list_of_dictionaries.sort(reverse=True, key=sort_on)
+    return list_of_dictionaries
